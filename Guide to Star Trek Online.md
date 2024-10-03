@@ -1,21 +1,37 @@
 # Build
 Cptn: Any, preferably Alien
+
 Cptn career: Any, for pvp you want sci.
+
 Cptn skills: distance penalty should be maxed out, cooldown reduction, crits. Do not put points in pen's.
+
 Cptn spec: Temporal primary, strategist secondary.
+
 Cptn traits: fleet coordinator, training, innocuus, operative, point blank shot, barrage
+
 Space Traits: advanced targeting systems, aux offense, magnified firepower, unshaken resolve, control immunity
+
 Boffs: watchers or SRO's
+
 Boff Powers: attack pattern omega, emergency power to weapons and engines, photonic officer, reverse shield polarity, aux to sif, teams, surgical strikes, 
 jam sensors, one energy weps attack upgrade and one torp attack upgrade
+
 Doffs: emergency conn hologram (from phoenix), 3 energy officers with crtd (rare is good enough), fabrication eng to extend reverse shield polarity. End game you want those 70M bprgs.
+
 Ship: Any T6, preferably with 2 experimental upgrades.
+
 Ship traits: any
+
 Ship seating: any, for pvp you want cmdr intel
+
 Ship Weapons: any, preferably with crtd mods, try to put cannons or beams in front and torps and mines at the back (or 360 weps)
+
 Consoles: Use protomatter consoles for tac, nullifier (+plasma dmg, stealth) for sci and isomags for eng. Domino, M6 computer, fleet power network for uni.
+
 Ship gear: gamma core, prevailing fortified engines, colony secondary/deflector and iconian shield
+
 Ship devices: Nimbus Pirates, Delta reinforcement, Phased Waveform, deuterium surplus, batteries and romulan Rep consumables.
+
 Ship Power: If you use energy weps, change to number 3 power view, set power to weapons, lock it, minimize shields, lock it, minimize engines, lock it.
 
 # Dmg calc
@@ -47,21 +63,34 @@ Some stuff is for veterans, and lowest vet tier unlocks at 100 days. Type "/play
 # How to play
 Tanking: Tanking relies on pulling aggro to increase threat by shooting multiple targets, threatening stance cptn skill, then using strategist skill, hull image refractors console,
 colony deflector to increase your hullcap, your crits, your dmg res and incoming heals
+
 Support: Support relies on debuffing your enemies and healing others. Pets with tachyon beam like delta flyers are great
+
 Damage: Dps relies on slotting as much as possible +dmg (cat1) +bonus dmg (crtd), final multipliers (attack upgrades), reducing cd and extending uptime of attack upgrades, haste and piloting
 
 # Tips
 Use as high as you can intelligence team, which will work with your stealth sci consoles to avoid being targeted. Forget resists, some people do so much dmg, you wont be able to tank.
+
 If you do get shot at, placate the target. 
+
 Move as fast as you can by triggering your fortified engines with aux to sif, your conn officer from phoenix and evasive maneouvers.
+
 Your tac, sci and eng seat number 1 should have team power so you can clear debuffs (plus polarize hull).
+
 Without subnuke, you will always be subpar in pvp.
+
 Try to extend uptime and reduce cd of your attack upgrade, it is essential for high dps required for elite content.
+
 Try not to double up on boff powers, or use two different attack patterns.
+
 Crits are very much important, and so is haste. Sometimes only diff between you doing 100k dps and someone doing 300k is their max hit.
+
 Avoid EPG builds unless you are in all EPG team because taking out enemy shields both brings dps, and if you don't take out their shields, makes your team job more difficult.
+
 Get all reps maxed out even if you don't need the gear. They will appear in your passives.
+
 Do all of R&D by doing 24h tasks. At level 15, they will give you nice traits.
+
 Under HUD options, select maintain auto attack. Then turn off autofire on all your ship weps if you enabled it.
 
 # Space Keybinds
