@@ -38,6 +38,7 @@ Use subnuke first, then forceful inspection, any weapon boosts, then SS III.
 
 # Where to do research:
 https://vger.netlify.app (turn on description search in options in top right)
+
 https://www.reddit.com/r/stobuilds/wiki/math/damage_categories/
 
 # Important
