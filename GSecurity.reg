@@ -1,0 +1,85 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess]
+"Start"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteRegistry]
+"Start"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\gpsvc]
+"Start"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\winmgmt]
+"Start"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile]
+"DisableNotifications"=dword:00000000
+"DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
+"AllowLocalPolicyMerge"=dword:00000000
+"AllowLocalIPsecPolicyMerge"=dword:00000000
+"EnableFirewall"=dword:00000001
+"DefaultOutboundAction"=dword:00000000
+"DefaultInboundAction"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PrivateProfile]
+"DisableNotifications"=dword:00000000
+"DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
+"AllowLocalPolicyMerge"=dword:00000000
+"AllowLocalIPsecPolicyMerge"=dword:00000000
+"EnableFirewall"=dword:00000001
+"DefaultOutboundAction"=dword:00000000
+"DefaultInboundAction"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile]
+"DisableNotifications"=dword:00000000
+"DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
+"AllowLocalPolicyMerge"=dword:00000000
+"AllowLocalIPsecPolicyMerge"=dword:00000000
+"EnableFirewall"=dword:00000001
+"DefaultOutboundAction"=dword:00000000
+"DefaultInboundAction"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile]
+"DisableNotifications"=dword:00000000
+"DisableUnicastResponsesToMulticastBroadcast"=dword:00000000
+"AllowLocalPolicyMerge"=dword:00000000
+"AllowLocalIPsecPolicyMerge"=dword:00000000
+"EnableFirewall"=dword:00000001
+"DefaultOutboundAction"=dword:00000000
+"DefaultInboundAction"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules]
+"Block-All-In"="v2.33|Action=Block|Active=TRUE|Dir=In|Name=Block all|LUAuth=O:LSD:(D;;CC;;;S-1-5-80-2940520708-3855866260-481812779-327648279-1710889582)|"
+"Block-All-Out"="v2.33|Action=Block|Active=TRUE|Dir=Out|Name=Block all|LUAuth=O:LSD:(D;;CC;;;S-1-5-80-859482183-879914841-863379149-1145462774-2388618682)(D;;CC;;;S-1-5-80-2940520708-3855866260-481812779-327648279-1710889582)(D;;CC;;;AC)|"
+"Block-TCP-In"="v2.32|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort2_10=1-1000|Name=Block incoming TCP|LUAuth=O:LSD:(D;;CC;;;S-1-5-80-2940520708-3855866260-481812779-327648279-1710889582)|"
+"Block-TCP-Out"="v2.32|Action=Block|Active=TRUE|Dir=Out|Protocol=6|LPort2_10=1-1000|Name=Block outgoing TCP|LUAuth=O:LSD:(D;;CC;;;S-1-5-80-859482183-879914841-863379149-1145462774-2388618682)(D;;CC;;;S-1-5-80-2940520708-3855866260-481812779-327648279-1710889582)|"
+"Block-UDP-Out"="v2.32|Action=Block|Active=TRUE|Dir=Out|Protocol=17|LPort2_10=1-1000|Name=Block outgoing UDP|LUAuth=O:LSD:(D;;CC;;;S-1-5-80-859482183-879914841-863379149-1145462774-2388618682)(D;;CC;;;S-1-5-80-2940520708-3855866260-481812779-327648279-1710889582)|"
+"Block-UDP-In"="v2.32|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort2_10=1-1000|Name=Block incoming UDP|LUAuth=O:LSD:(D;;CC;;;S-1-5-80-2940520708-3855866260-481812779-327648279-1710889582)|"
+"Block-Winlogon-In"="v2.32|Action=Block|Active=TRUE|Dir=In|App=%SystemRoot%\\System32\\winlogon.exe|Name=winlogon|"
+"Block-LogonUI-Out"="v2.32|Action=Block|Active=TRUE|Dir=In|App=%SystemRoot%\\System32\\LogonUI.exe|Name=logonui|"
+"Block-Winlogon-Out"="v2.32|Action=Block|Active=TRUE|Dir=Out|App=%SystemRoot%\\System32\\winlogon.exe|Name=winlogon|"
+"Block-LogonUI-In"="v2.32|Action=Block|Active=TRUE|Dir=Out|App=%SystemRoot%\\System32\\LogonUI.exe|Name=logonui|"
+"RemoteDesktop-Shadow-In-TCP"="v2.32|Action=Block|Active=TRUE|Dir=In|Protocol=6|App=%SystemRoot%\\system32\\RdpSa.exe|Name=@FirewallAPI.dll,-28778|Desc=@FirewallAPI.dll,-28779|EmbedCtxt=@FirewallAPI.dll,-28752|Edge=TRUE|Defer=App|"
+"RemoteDesktop-UserMode-In-TCP"="v2.32|Action=Block|Active=TRUE|Dir=In|Protocol=6|LPort=3389|App=%SystemRoot%\\system32\\svchost.exe|Svc=termservice|Name=@FirewallAPI.dll,-28775|Desc=@FirewallAPI.dll,-28756|EmbedCtxt=@FirewallAPI.dll,-28752|"
+"RemoteDesktop-UserMode-In-UDP"="v2.32|Action=Block|Active=TRUE|Dir=In|Protocol=17|LPort=3389|App=%SystemRoot%\\system32\\svchost.exe|Svc=termservice|Name=@FirewallAPI.dll,-28776|Desc=@FirewallAPI.dll,-28777|EmbedCtxt=@FirewallAPI.dll,-28752|"
+"Block-windeploy-In"="v2.32|Action=Block|Active=TRUE|Dir=In|App=%SystemRoot%\\System32\\oobe\\windeploy.exe|Name=windeploy.exe Block Inbound|"
+"Block-windeploy-Out"="v2.32|Action=Block|Active=TRUE|Dir=Out|App=%SystemRoot%\\System32\\oobe\\windeploy.exe|Name=windeploy.exe Block Outbound|"
+"Block-ftp-In"="v2.32|Action=Block|Active=TRUE|Dir=In|App=%SystemRoot%\\System32\\ftp.exe|Name=ftp.exe Block Inbound|"
+"Block-ftp-Out"="v2.32|Action=Block|Active=TRUE|Dir=Out|App=%SystemRoot%\\System32\\ftp.exe|Name=ftp.exe Block Outbound|"
+"Block-Explorer-Out"="v2.32|Action=Block|Active=TRUE|Dir=Out|App=%SystemRoot%\\explorer.exe|Name=explorer|"
+"Block-Explorer-In"="v2.32|Action=Block|Active=TRUE|Dir=In|App=%SystemRoot%\\explorer.exe|Name=explorer|"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg]
+"RemoteRegAccess"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000001
+"ConsentPromptBehaviorEnhancedAdmin"=dword:00000001
+"ConsentPromptBehaviorUser"=dword:00000001
+"DisableRegistryTools"=dword:00000001
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000001
+"ConsentPromptBehaviorEnhancedAdmin"=dword:00000001
+"ConsentPromptBehaviorUser"=dword:00000001
+"DisableRegistryTools"=dword:00000001
