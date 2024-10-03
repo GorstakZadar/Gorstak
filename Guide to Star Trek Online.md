@@ -97,14 +97,6 @@ Under HUD options, select maintain auto attack. Then turn off autofire on all yo
 Copy the following in notepad and save as `Space.txt`. Then while you are in space in STO, type `/unbind_all` and then `/bind_load_file D:\Space.txt` (or the path where you saved the file). 
 Assign your powers to tray 10 and 9 and keep pressing spacebar during combat.
 
-# Space Keybinds
-Copy the following in notepad and save as `Space.txt`. Then while you are in space in STO, type `/unbind_all` and then `/bind_load_file D:\Space.txt` (or the path where you saved the file). 
-Assign your powers to tray 10 and 9 and keep pressing spacebar during combat.
-
-# Space Keybinds
-Copy the following in notepad and save as `Space.txt`. Then while you are in space in STO, type `/unbind_all` and then `/bind_load_file D:\Space.txt` (or the path where you saved the file). 
-Assign your powers to tray 10 and 9 and keep pressing spacebar during combat.
-
 ```
 0x39 "+TrayExecByTray 9 0$$+TrayExecByTray 9 1$$+TrayExecByTray 9 2$$+TrayExecByTray 9 3$$+TrayExecByTray 9 4$$+TrayExecByTray 9 5$$+TrayExecByTray 9 6$$+TrayExecByTray 9 7$$+TrayExecByTray 9 8$$+TrayExecByTray 9 9$$+TrayExecByTray 8 0$$+TrayExecByTray 8 1$$+TrayExecByTray 8 2$$+TrayExecByTray 8 3$$+TrayExecByTray 8 4$$+TrayExecByTray 8 5$$+TrayExecByTray 8 6$$+TrayExecByTray 8 7$$+TrayExecByTray 8 8$$+TrayExecByTray 8 9$$Target_Self$$FireProjectiles$$FirePhasers$$FireProjectiles$$Target_Self$$+TrayExecByTray 8 9$$+TrayExecByTray 8 8$$+TrayExecByTray 8 7$$+TrayExecByTray 8 6$$+TrayExecByTray 8 5$$+TrayExecByTray 8 4$$+TrayExecByTray 8 3$$+TrayExecByTray 8 2$$+TrayExecByTray 8 1$$+TrayExecByTray 8 0$$+TrayExecByTray 9 9$$+TrayExecByTray 9 8$$+TrayExecByTray 9 7$$+TrayExecByTray 9 6$$+TrayExecByTray 9 5$$+TrayExecByTray 9 4$$+TrayExecByTray 9 3$$+TrayExecByTray 9 2$$+TrayExecByTray 9 1$$+TrayExecByTray 9 0" ""
 ```
