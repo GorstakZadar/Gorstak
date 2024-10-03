@@ -1,18 +1,19 @@
 # Build
-Cptn: Any, preferably Alien, preferably Rom.
-Cptn career: Any, preferably sci.
+Cptn: Any, preferably Alien
+Cptn career: Any, for pvp you want sci.
 Cptn skills: distance penalty should be maxed out, cooldown reduction, crits. Do not put points in pen's.
 Cptn spec: Temporal primary, strategist secondary.
 Cptn traits: fleet coordinator, training, innocuus, operative, point blank shot, barrage
 Space Traits: advanced targeting systems, aux offense, magnified firepower, unshaken resolve, control immunity
-Boffs: watchers
-Boff Powers: attack pattern omega, emergency power to weapons and engines, photonic officer, reverse shield polarity, aux to sif, teams, surgical strikes, jam sensors, one energy weps attack upgrade and one torp attack upgrade
-Doffs: emergency conn hologram (from phoenix), 3 energy officers with crtd (rare is good enough), fabrication eng to extend reverse shield polarity.
+Boffs: watchers or SRO's
+Boff Powers: attack pattern omega, emergency power to weapons and engines, photonic officer, reverse shield polarity, aux to sif, teams, surgical strikes, 
+jam sensors, one energy weps attack upgrade and one torp attack upgrade
+Doffs: emergency conn hologram (from phoenix), 3 energy officers with crtd (rare is good enough), fabrication eng to extend reverse shield polarity. End game you want those 70M bprgs.
 Ship: Any T6, preferably with 2 experimental upgrades.
 Ship traits: any
 Ship seating: any, for pvp you want cmdr intel
-Ship Weapons: any, preferably with crtd mods, try to put cannons or beams in front and torps and mines at the back
-Consoles: cd, +dmg, + bonus dmg, +crits and +haste stuff
+Ship Weapons: any, preferably with crtd mods, try to put cannons or beams in front and torps and mines at the back (or 360 weps)
+Consoles: Use protomatter consoles for tac, nullifier (+plasma dmg, stealth) for sci and isomags for eng. Domino, M6 computer, fleet power network for uni.
 Ship gear: gamma core, prevailing fortified engines, colony secondary/deflector and iconian shield
 Ship devices: Nimbus Pirates, Delta reinforcement, Phased Waveform, deuterium surplus, batteries and romulan Rep consumables.
 Ship Power: If you use energy weps, change to number 3 power view, set power to weapons, lock it, minimize shields, lock it, minimize engines, lock it.
@@ -24,17 +25,16 @@ that wep will do 200% more dmg, meaning 3k. If you also do surgical strikes III 
 it will be 800% +dmg on your 1k, meaning 9k dmg. If you also do haste 100%, it will be 18k. If you get 6 weps to do all that, it will be 108k. 
 So, any single source of dmg is usually insufficient. At least get pets.
 
+# Mechanics
+Basically your wep hits their shields first. Any shield pen you might have will increase shield bleedthrough and apply dmg to hull which also has it's own resists.
+Logic would suggest you want both pens and lorca console? Well, no. If you don't take out their shields, that means you made less dmg. And hull resists has diminishing returns,
+meaning usually it's not greater than 50-60%, and your pen is useless. It is better to do additional crtd mod on your weps. 
+If you can't heal dmg you receive you should reduce your threat, or use stealth. Nullifier stealth consoles will help and so will Intelligence Team.
+
 # Pvp
 Pvp relies on not being targeted by using intel team, sci stealth consoles, high defense value (slot aux to structural to trigger your engines) and surgical strikes for dmg. 
 You may want to disable your enemy first with subnuke and holds. If everything fails, you can use high dmg clickies. You may want control immunity rep trait.
 Use subnuke first, then forceful inspection, any weapon boosts, then SS III.
-
-# Example
-You have +dmg consoles but don't debuff your target = low dmg
-You have no +dmg consoles but debuff your target = low dmg
-You have +dmg consoles and debuff your target = medium dmg
-You have +dmg and high crits and debuff your target = high dmg
-You have +dmg, high crits, haste and debuff your target = huge dmg
 
 # Where to do research:
 https://vger.netlify.app (turn on description search in options in top right)
@@ -44,28 +44,28 @@ https://www.reddit.com/r/stobuilds/wiki/math/damage_categories/
 Some stuff is for veterans, and lowest vet tier unlocks at 100 days. Type "/played" into chat window.
 
 # How to play
-Tanking: Tanking relies on pulling aggro to increase threat by shooting multiple targets, threatening stance cptn skill. then using strategist skill, colony deflector to increase your hullcap, your crits, your dmg res and incoming heals
-Support: Support relies on debuffing your enemies and healing others. Pen and attack pattern beta is important, maybe type 7 shuttles and delta flyers too
-Damage: Dps relies on slotting as much as possible +dmg (cat1) +bonus dmg (crtd), final multipliers (attack upgrades), reducing cd or extending uptime of attack upgrades, haste and piloting
+Tanking: Tanking relies on pulling aggro to increase threat by shooting multiple targets, threatening stance cptn skill, then using strategist skill, hull image refractors console,
+colony deflector to increase your hullcap, your crits, your dmg res and incoming heals
+Support: Support relies on debuffing your enemies and healing others. Pets with tachyon beam like delta flyers are great
+Damage: Dps relies on slotting as much as possible +dmg (cat1) +bonus dmg (crtd), final multipliers (attack upgrades), reducing cd and extending uptime of attack upgrades, haste and piloting
 
 # Tips
 Use as high as you can intelligence team, which will work with your stealth sci consoles to avoid being targeted. Forget resists, some people do so much dmg, you wont be able to tank.
 If you do get shot at, placate the target. 
 Move as fast as you can by triggering your fortified engines with aux to sif, your conn officer from phoenix and evasive maneouvers.
-Your tac, sci and eng seat number 1 should have team power so you can clear debuffs.
+Your tac, sci and eng seat number 1 should have team power so you can clear debuffs (plus polarize hull).
 Without subnuke, you will always be subpar in pvp.
-Try to extend and reduce cd of your attack upgrade, it is essential for high dps required for elite content.
+Try to extend uptime and reduce cd of your attack upgrade, it is essential for high dps required for elite content.
 Try not to double up on boff powers, or use two different attack patterns.
 Crits are very much important, and so is haste. Sometimes only diff between you doing 100k dps and someone doing 300k is their max hit.
 Avoid EPG builds unless you are in all EPG team because taking out enemy shields both brings dps, and if you don't take out their shields, makes your team job more difficult.
 Get all reps maxed out even if you don't need the gear. They will appear in your passives.
-If you enable autofire on weps, they will execute in order you enabled it. When you do, just slot 1st wep to your tray to your spacebar cycle.
 Do all of R&D by doing 24h tasks. At level 15, they will give you nice traits.
 Under HUD options, select maintain auto attack. Then turn off autofire on all your ship weps if you enabled it.
 
 # Space keybinds
 Copy the following in notepad and save as Space.txt. Then while you are in space in STO, type /unbind_all and then /bind_load_file D:\Space.txt (or path where you saved the file). 
-Assign your powers to tray 10, and 9 and keep pressing spacebar during combat.
+Assign your powers to tray 10 and 9 and keep pressing spacebar during combat.
 
 0x39 "+TrayExecByTray 9 0$$+TrayExecByTray 9 1$$+TrayExecByTray 9 2$$+TrayExecByTray 9 3$$+TrayExecByTray 9 4$$+TrayExecByTray 9 5$$+TrayExecByTray 9 6$$+TrayExecByTray 9 7$$+TrayExecByTray 9 8$$+TrayExecByTray 9 9$$+TrayExecByTray 8 0$$+TrayExecByTray 8 1$$+TrayExecByTray 8 2$$+TrayExecByTray 8 3$$+TrayExecByTray 8 4$$+TrayExecByTray 8 5$$+TrayExecByTray 8 6$$+TrayExecByTray 8 7$$+TrayExecByTray 8 8$$+TrayExecByTray 8 9$$Target_Self$$FireProjectiles$$FirePhasers$$FireProjectiles$$Target_Self$$+TrayExecByTray 8 9$$+TrayExecByTray 8 8$$+TrayExecByTray 8 7$$+TrayExecByTray 8 6$$+TrayExecByTray 8 5$$+TrayExecByTray 8 4$$+TrayExecByTray 8 3$$+TrayExecByTray 8 2$$+TrayExecByTray 8 1$$+TrayExecByTray 8 0$$+TrayExecByTray 9 9$$+TrayExecByTray 9 8$$+TrayExecByTray 9 7$$+TrayExecByTray 9 6$$+TrayExecByTray 9 5$$+TrayExecByTray 9 4$$+TrayExecByTray 9 3$$+TrayExecByTray 9 2$$+TrayExecByTray 9 1$$+TrayExecByTray 9 0" ""
 
