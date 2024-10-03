@@ -16,7 +16,7 @@ Boffs: watchers or SRO's
 Boff Powers: attack pattern omega, emergency power to weapons and engines, photonic officer, reverse shield polarity, aux to sif, teams, surgical strikes, 
 jam sensors, one energy weps attack upgrade and one torp attack upgrade
 
-Doffs: emergency conn hologram (from phoenix), 3 energy officers with crtd (rare is good enough), fabrication eng to extend reverse shield polarity. End game you want those 70M bprgs.
+Doffs: emergency conn hologram (from phoenix), 3 energy officers with crtd (rare is good enough), fabrication eng to extend reverse shield polarity. End game you want those 70M borgs.
 
 Ship: Any T6, preferably with 2 experimental upgrades.
 
