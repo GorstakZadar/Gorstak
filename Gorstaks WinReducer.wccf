@@ -814,7 +814,7 @@
     <Element Category="Remove - Multimedia" Name="Biometry - PIN Authentification" Selected="false" />
     <Element Category="Remove - Multimedia" Name="Biometry - Picture Password" Selected="true" />
     <Element Category="Remove - Multimedia" Name="Bluetooth (Device Pairing)" Selected="false" />
-    <Element Category="Remove - Multimedia" Name="Codec - 3D Audio (Decoder)" Selected="true" />
+    <Element Category="Remove - Multimedia" Name="Codec - 3D Audio (Decoder)" Selected="false" />
     <Element Category="Remove - Multimedia" Name="Codec - 3D Audio (Dolby Headphones Encoder)" Selected="true" />
     <Element Category="Remove - Multimedia" Name="Codec - AAC (Decoder)" Selected="false" />
     <Element Category="Remove - Multimedia" Name="Codec - AAC (Encoder)" Selected="true" />
@@ -874,7 +874,7 @@
     <Element Category="Remove - Multimedia" Name="Digital Living Network Alliance (DLNA)" Selected="true" />
     <Element Category="Remove - Multimedia" Name="DirectX (Direct Music)" Selected="true" />
     <Element Category="Remove - Multimedia" Name="DirectX (Diagnostic Tool)" Selected="true" />
-    <Element Category="Remove - Multimedia" Name="DVD-Video Playback" Selected="false" />
+    <Element Category="Remove - Multimedia" Name="DVD-Video Playback" Selected="true" />
     <Element Category="Remove - Multimedia" Name="Embedded Lockdown" Selected="true" />
     <Element Category="Remove - Multimedia" Name="Force Feedback" Selected="true" />
     <Element Category="Remove - Multimedia" Name="Game Bar" Selected="false" />
