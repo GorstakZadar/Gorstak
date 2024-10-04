@@ -26,7 +26,7 @@ Ship seating: any, for pvp you want cmdr intel
 
 Ship Weapons: any, preferably with crtd mods, try to put cannons or beams in front and torps and mines at the back (or 360 weps)
 
-Consoles: Assimilated module + haste consoles (fleet power network array, domino, M6 computer), xenotech consoles, lorca, isomags, protomatter consoles 
+Consoles: Assimilated module + haste consoles (fleet power network array, domino, M6 computer), lorca, isomags, protomatter consoles 
 
 Ship gear: gamma core, prevailing fortified engines, colony secondary/deflector and iconian shield
 
