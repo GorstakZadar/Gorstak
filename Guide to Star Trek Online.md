@@ -3,30 +3,30 @@ Cptn: Any, preferably Alien
 
 Cptn career: Any, for pvp you want sci.
 
-Cptn skills: Everything is good, just some is more useful than others. Distance penalty should be maxed out, cooldown reduction, crits.
+Cptn skills: Everything is good, just some is more useful than others. Distance penalty should be maxed out.
 
 Cptn spec: Temporal primary, strategist secondary.
 
-Cptn traits: +crit +dmg, +bonus dmg, +haste, +maybe something to save your ass
+Cptn traits: +dmg, +bonus dmg, +haste, +maybe something to save your ass, accuracy
 
-Space and Ground Traits: All 4 pens plus one of your choice if you unlocked 5th
+Space and Ground Traits: +dmg, +bonus dmg, +haste, +maybe something to save your ass, accuracy
 
 Boffs: watchers or SRO's
 
 Boff Powers: attack pattern omega, emergency power to engines, photonic officer, reverse shield polarity, aux to sif, teams, surgical strikes, 
 jam sensors, scramble sensors, gravity well, one attack upgrade and polarize hull
 
-Doffs: emergency conn hologram (from phoenix), 3 energy officers with crtd (rare is good enough), fabrication eng to extend reverse shield polarity. End game you want those 70M borgs.
+Doffs: emergency conn hologram (from phoenix), fabrication eng to extend reverse shield polarity
 
-Ship: Any T6, preferably with 2 experimental upgrades.
+Ship: Any T6, preferably with 2 experimental upgrades
 
 Ship traits: any
 
 Ship seating: any, for pvp you want cmdr intel
 
-Ship Weapons: any, preferably with dmg mods, try to put cannons or beams in front and torps and mines at the back (or 360 weps)
+Ship Weapons: any, preferably with dmg mods, try to put cannons or beams in front and 360 weps at the back
 
-Consoles: Assimilated module + haste consoles (fleet power network array, domino, M6 computer), lorca, isomags, protomatter consoles 
+Consoles: Assimilated module + haste consoles (fleet power network array, domino, M6 computer), isomags, protomatter consoles 
 
 Ship gear: gamma core, prevailing fortified engines, colony secondary/deflector and iconian shield
 
@@ -45,11 +45,6 @@ So, any single source of dmg is usually insufficient. At least get pets.
 
 # Math
 +dmg consoles * +bonus dmg/haste consoles * wpnpwr/acc/[dmg] mod/attack upgrade
-
-# Mechanics
-Basically your wep hits their shields first. Any shield pen you might have will increase shield bleedthrough and apply dmg to hull which also has it's own resists.
-Logic would suggest you want both shield and hull pens. Plasma weps will kill target quicker because of dot applied to their hull, but instead of relying on 2.5%
-chance, you should get dot which is per hit, like agony phasers.
 
 # Pvp
 Pvp relies on not being targeted by using intel team, sci stealth consoles, high defense value and surgical strikes for dmg. 
@@ -73,8 +68,6 @@ Support: Support relies on debuffing your enemies and healing others. Pets with 
 Damage: Dps relies on slotting as much as possible +dmg (cat1) +bonus dmg (crtd), final multipliers (attack upgrades), reducing cd and extending uptime of attack upgrades, haste and piloting
 
 # Tips
-Use as high as you can intelligence team, which will work with your stealth sci consoles to avoid being targeted. Or, heal dmg you get.
-
 If you get shot at, placate the target. 
 
 Move as fast as you can by triggering your fortified engines with aux to sif, your conn officer from phoenix, epte and evasive maneouvers.
@@ -89,7 +82,7 @@ Try not to double up on boff powers, or use two different attack patterns.
 
 Google each boff power on stowiki, and if it puts other skills on cd, don't use those other skills.
 
-Crits are very much important, and so is haste. Sometimes only diff between you doing 100k dps and someone doing 300k is their max hit.
+Accuracy is very much important, and so is haste. Sometimes only diff between you doing 100k dps and someone doing 300k is their max hit.
 
 Avoid EPG builds unless you are in all EPG team because taking out enemy shields both brings dps, and if you don't take out their shields, makes your team job more difficult.
 
@@ -99,7 +92,7 @@ Do all of R&D by doing 24h tasks. At level 15, they will give you nice traits an
 
 Under HUD options, select maintain auto attack. Then turn off autofire on all your ship weps if you enabled it.
 
-Assimilated module + Kinetic cutting beam will give set bonus which will help with your weapon drain.
+Assimilated module + Kinetic cutting beam will give set bonus which will help with your weapon energy drain.
 
 # Space Keybinds
 Copy the following in notepad and save as `Space.txt`. Then while you are in space in STO, type `/unbind_all` and then `/bind_load_file D:\Space.txt` (or the path where you saved the file). 
