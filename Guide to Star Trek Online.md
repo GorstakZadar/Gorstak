@@ -43,6 +43,9 @@ that wep will do 200% more dmg, meaning 3k. If you also do surgical strikes III 
 it will be 800% +dmg on your 1k, meaning 9k dmg. If you also do haste 100%, it will be 18k. If you get 6 weps to do all that, it will be 108k. 
 So, any single source of dmg is usually insufficient. At least get pets.
 
+# Math
++dmg consoles * +bonus dmg/haste consoles * wpnpwr/acc/[dmg] mod/attack upgrade
+
 # Mechanics
 Basically your wep hits their shields first. Any shield pen you might have will increase shield bleedthrough and apply dmg to hull which also has it's own resists.
 Logic would suggest you want both shield and hull pens. Plasma weps will kill target quicker because of dot applied to their hull, but instead of relying on 2.5%
