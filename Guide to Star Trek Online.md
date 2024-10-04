@@ -7,13 +7,13 @@ Cptn skills: Everything is good, just some is more useful than others. Distance 
 
 Cptn spec: Temporal primary, strategist secondary.
 
-Cptn traits: fleet coordinator, training, innocuus, operative, point blank shot, barrage
+Cptn traits: +crit +dmg, +bonus dmg, +haste, +maybe something to save your ass
 
 Space and Ground Traits: All 4 pens plus one of your choice if you unlocked 5th
 
 Boffs: watchers or SRO's
 
-Boff Powers: attack pattern omega, emergency power to weapons and engines, photonic officer, reverse shield polarity, aux to sif, teams, surgical strikes, 
+Boff Powers: attack pattern omega, emergency power to engines, photonic officer, reverse shield polarity, aux to sif, teams, surgical strikes, 
 jam sensors, scramble sensors, gravity well, one attack upgrade and polarize hull
 
 Doffs: emergency conn hologram (from phoenix), 3 energy officers with crtd (rare is good enough), fabrication eng to extend reverse shield polarity. End game you want those 70M borgs.
@@ -34,6 +34,8 @@ Ship devices: Nimbus Pirates, Delta reinforcement, Phased Waveform, deuterium su
 
 Ship Power: If you use energy weps, change to number 3 power view, set power to weapons, lock it, minimize shields, lock it, minimize engines, lock it.
 
+Ground gear: Romulan Imperial Navy kit + Armor, Na'kuhl weapon + shield + plasma piercing rifle (End game you want herald staff)
+
 # Dmg calc
 Weapon base is mark I. That base is a small number. If you increase mark, dmg goes up. Weapon rarity basically means you have more mods on your weapons.
 For example, normal beam at mark XII does 500 dmg and at xv and 75 wep power does 1k dps. If you add 5 30% +dmg consoles and 5 dmg mods (10% +dmg each), 
@@ -47,7 +49,7 @@ Logic would suggest you want both shield and hull pens. Plasma weps will kill ta
 chance, you should get dot which is per hit, like agony phasers.
 
 # Pvp
-Pvp relies on not being targeted by using intel team, sci stealth consoles, high defense value (slot aux to structural to trigger your engines) and surgical strikes for dmg. 
+Pvp relies on not being targeted by using intel team, sci stealth consoles, high defense value and surgical strikes for dmg. 
 You may want to disable your enemy first with subnuke and holds. If everything fails, you can use high dmg clickies. You may want control immunity rep trait.
 Use subnuke first, then holds, any weapon boosts, then SS III.
 
