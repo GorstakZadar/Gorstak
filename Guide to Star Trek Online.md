@@ -82,7 +82,9 @@ Without subnuke, you will always be subpar in pvp.
 
 Try to extend uptime and reduce cd of your attack upgrade, it is essential for high dps required for elite content.
 
-Try not to double up on boff powers, or use two different attack patterns.
+Try not to double up on boff powers, or use two different attack patterns. 
+
+Google each boff power on stowiki, and if it puts other skills on cd, don't use those other skills.
 
 Crits are very much important, and so is haste. Sometimes only diff between you doing 100k dps and someone doing 300k is their max hit.
 
