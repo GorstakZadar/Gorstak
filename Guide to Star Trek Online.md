@@ -3,7 +3,7 @@ Cptn: Any, preferably Alien
 
 Cptn career: Any, for pvp you want sci.
 
-Cptn skills: distance penalty should be maxed out, cooldown reduction, crits. Do not put points in pen's.
+Cptn skills: Everything is good, just some is more useful than others. Distance penalty should be maxed out, cooldown reduction, crits.
 
 Cptn spec: Temporal primary, strategist secondary.
 
@@ -14,7 +14,7 @@ Space Traits: advanced targeting systems, aux offense, magnified firepower, unsh
 Boffs: watchers or SRO's
 
 Boff Powers: attack pattern omega, emergency power to weapons and engines, photonic officer, reverse shield polarity, aux to sif, teams, surgical strikes, 
-jam sensors, one energy weps attack upgrade and one torp attack upgrade
+jam sensors, one attack upgrade and polarize hull
 
 Doffs: emergency conn hologram (from phoenix), 3 energy officers with crtd (rare is good enough), fabrication eng to extend reverse shield polarity. End game you want those 70M borgs.
 
@@ -28,9 +28,7 @@ Ship Weapons: any, preferably with crtd mods, try to put cannons or beams in fro
 
 Uni and Eng consoles: Isomags
 
-Sci consoles: nullifiers with [Stealth] and plasma dmg proc
-
-Tac Consoles: Assimilated module + haste consoles (fleet power network array, domino, M6 computer) 
+Consoles: Assimilated module + haste consoles (fleet power network array, domino, M6 computer), xenotech consoles, lorca, isomags, protomatter consoles 
 
 Ship gear: gamma core, prevailing fortified engines, colony secondary/deflector and iconian shield
 
@@ -47,9 +45,8 @@ So, any single source of dmg is usually insufficient. At least get pets.
 
 # Mechanics
 Basically your wep hits their shields first. Any shield pen you might have will increase shield bleedthrough and apply dmg to hull which also has it's own resists.
-Logic would suggest you want both pens and lorca console? Well, no. If you don't take out their shields, that means you made less dmg. And hull resists has diminishing returns,
-meaning usually it's not greater than 50-60%, and your pen is useless. It is better to do additional crtd mod on your weps. 
-If you can't heal dmg you receive you should reduce your threat, or use stealth. Nullifier stealth consoles will help and so will Intelligence Team.
+Logic would suggest you want both shield and hull pens. Plasma weps will kill target quicker because of dot applied to their hull, but instead of relying on 2.5%
+chance, you should get dot which is per hit, like agony phasers.
 
 # Pvp
 Pvp relies on not being targeted by using intel team, sci stealth consoles, high defense value (slot aux to structural to trigger your engines) and surgical strikes for dmg. 
