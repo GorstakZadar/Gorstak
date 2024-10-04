@@ -24,7 +24,7 @@ Ship traits: any
 
 Ship seating: any, for pvp you want cmdr intel
 
-Ship Weapons: any, preferably with crtd mods, try to put cannons or beams in front and torps and mines at the back (or 360 weps)
+Ship Weapons: any, preferably with dmg mods, try to put cannons or beams in front and torps and mines at the back (or 360 weps)
 
 Consoles: Assimilated module + haste consoles (fleet power network array, domino, M6 computer), lorca, isomags, protomatter consoles 
 
