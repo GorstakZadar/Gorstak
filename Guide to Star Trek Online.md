@@ -26,7 +26,11 @@ Ship seating: any, for pvp you want cmdr intel
 
 Ship Weapons: any, preferably with crtd mods, try to put cannons or beams in front and torps and mines at the back (or 360 weps)
 
-Consoles: Use protomatter consoles for tac, nullifier (+plasma dmg, stealth) for sci and isomags for eng. Domino, M6 computer, fleet power network for uni.
+Uni and Eng consoles: Isomags
+
+Sci consoles: nullifiers with [Stealth] and plasma dmg proc
+
+Tac Consoles: Assimilated module + haste consoles (fleet power network array, domino, M6 computer) 
 
 Ship gear: gamma core, prevailing fortified engines, colony secondary/deflector and iconian shield
 
@@ -92,6 +96,8 @@ Get all reps maxed out even if you don't need the gear. They will appear in your
 Do all of R&D by doing 24h tasks. At level 15, they will give you nice traits.
 
 Under HUD options, select maintain auto attack. Then turn off autofire on all your ship weps if you enabled it.
+
+Assimilate module + Kinetic cutting beam will give set bonus which will help with your weapon drain.
 
 # Space Keybinds
 Copy the following in notepad and save as `Space.txt`. Then while you are in space in STO, type `/unbind_all` and then `/bind_load_file D:\Space.txt` (or the path where you saved the file). 
