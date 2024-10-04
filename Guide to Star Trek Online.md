@@ -9,12 +9,12 @@ Cptn spec: Temporal primary, strategist secondary.
 
 Cptn traits: fleet coordinator, training, innocuus, operative, point blank shot, barrage
 
-Space Traits: advanced targeting systems, aux offense, magnified firepower, unshaken resolve, control immunity
+Space and Ground Traits: All 4 pens plus one of your choice if you unlocked 5th
 
 Boffs: watchers or SRO's
 
 Boff Powers: attack pattern omega, emergency power to weapons and engines, photonic officer, reverse shield polarity, aux to sif, teams, surgical strikes, 
-jam sensors, one attack upgrade and polarize hull
+jam sensors, scramble sensors, gravity well, one attack upgrade and polarize hull
 
 Doffs: emergency conn hologram (from phoenix), 3 energy officers with crtd (rare is good enough), fabrication eng to extend reverse shield polarity. End game you want those 70M borgs.
 
@@ -25,8 +25,6 @@ Ship traits: any
 Ship seating: any, for pvp you want cmdr intel
 
 Ship Weapons: any, preferably with crtd mods, try to put cannons or beams in front and torps and mines at the back (or 360 weps)
-
-Uni and Eng consoles: Isomags
 
 Consoles: Assimilated module + haste consoles (fleet power network array, domino, M6 computer), xenotech consoles, lorca, isomags, protomatter consoles 
 
@@ -51,7 +49,7 @@ chance, you should get dot which is per hit, like agony phasers.
 # Pvp
 Pvp relies on not being targeted by using intel team, sci stealth consoles, high defense value (slot aux to structural to trigger your engines) and surgical strikes for dmg. 
 You may want to disable your enemy first with subnuke and holds. If everything fails, you can use high dmg clickies. You may want control immunity rep trait.
-Use subnuke first, then forceful inspection, any weapon boosts, then SS III.
+Use subnuke first, then holds, any weapon boosts, then SS III.
 
 # Where to do research:
 https://vger.netlify.app (turn on description search in options in top right)
@@ -70,11 +68,11 @@ Support: Support relies on debuffing your enemies and healing others. Pets with 
 Damage: Dps relies on slotting as much as possible +dmg (cat1) +bonus dmg (crtd), final multipliers (attack upgrades), reducing cd and extending uptime of attack upgrades, haste and piloting
 
 # Tips
-Use as high as you can intelligence team, which will work with your stealth sci consoles to avoid being targeted. Forget resists, some people do so much dmg, you wont be able to tank.
+Use as high as you can intelligence team, which will work with your stealth sci consoles to avoid being targeted. Or, heal dmg you get.
 
-If you do get shot at, placate the target. 
+If you get shot at, placate the target. 
 
-Move as fast as you can by triggering your fortified engines with aux to sif, your conn officer from phoenix and evasive maneouvers.
+Move as fast as you can by triggering your fortified engines with aux to sif, your conn officer from phoenix, epte and evasive maneouvers.
 
 Your tac, sci and eng seat number 1 should have team power so you can clear debuffs (plus polarize hull).
 
@@ -88,9 +86,9 @@ Crits are very much important, and so is haste. Sometimes only diff between you 
 
 Avoid EPG builds unless you are in all EPG team because taking out enemy shields both brings dps, and if you don't take out their shields, makes your team job more difficult.
 
-Get all reps maxed out even if you don't need the gear. They will appear in your passives.
+Get all reps maxed out even if you don't need the gear. They will appear in your passives and you may need the traits, ship modules and respecs.
 
-Do all of R&D by doing 24h tasks. At level 15, they will give you nice traits.
+Do all of R&D by doing 24h tasks. At level 15, they will give you nice traits and you'll be able to craft nice stuff.
 
 Under HUD options, select maintain auto attack. Then turn off autofire on all your ship weps if you enabled it.
 
