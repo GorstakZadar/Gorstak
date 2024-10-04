@@ -97,7 +97,7 @@ Do all of R&D by doing 24h tasks. At level 15, they will give you nice traits.
 
 Under HUD options, select maintain auto attack. Then turn off autofire on all your ship weps if you enabled it.
 
-Assimilate module + Kinetic cutting beam will give set bonus which will help with your weapon drain.
+Assimilated module + Kinetic cutting beam will give set bonus which will help with your weapon drain.
 
 # Space Keybinds
 Copy the following in notepad and save as `Space.txt`. Then while you are in space in STO, type `/unbind_all` and then `/bind_load_file D:\Space.txt` (or the path where you saved the file). 
