@@ -19,6 +19,8 @@ var blockedURLs = [
   "discord.com/channels/731641286389661727",
   "discord.com/channels/246414844851519490",
   "discord.com/channels/240880736851329024"
+  "reddit.com/r/croatia"
+  "reddit.com/r/hrvatska"
   // Ensure no duplicate entries
 ];
 
@@ -33,7 +35,6 @@ var blockedSites = [
   "novavideo.dnevnik.hr",
   "forum.hr",
   "forum.pcekspert.com",
-  "reddit.com"
   // Ensure no path-specific entries
 ];
 
