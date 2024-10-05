@@ -96,10 +96,10 @@ Assimilated module + Kinetic cutting beam will give set bonus which will help wi
 
 # Space Keybinds
 Copy the following in notepad and save as `Space.txt`. Then while you are in space in STO, type `/unbind_all` and then `/bind_load_file D:\Space.txt` (or the path where you saved the file). 
-Assign your powers to tray 10 and 9 and keep pressing spacebar during combat.
+Assign your powers to tray 10, 9 8 and 7 and keep pressing spacebar during combat.
 
 ```
-0x39 "+TrayExecByTray 9 0$$+TrayExecByTray 9 1$$+TrayExecByTray 9 2$$+TrayExecByTray 9 3$$+TrayExecByTray 9 4$$+TrayExecByTray 9 5$$+TrayExecByTray 9 6$$+TrayExecByTray 9 7$$+TrayExecByTray 9 8$$+TrayExecByTray 9 9$$+TrayExecByTray 8 0$$+TrayExecByTray 8 1$$+TrayExecByTray 8 2$$+TrayExecByTray 8 3$$+TrayExecByTray 8 4$$+TrayExecByTray 8 5$$+TrayExecByTray 8 6$$+TrayExecByTray 8 7$$+TrayExecByTray 8 8$$+TrayExecByTray 8 9$$FireProjectiles$$FirePhasers$$FireProjectiles$$+TrayExecByTray 8 9$$+TrayExecByTray 8 8$$+TrayExecByTray 8 7$$+TrayExecByTray 8 6$$+TrayExecByTray 8 5$$+TrayExecByTray 8 4$$+TrayExecByTray 8 3$$+TrayExecByTray 8 2$$+TrayExecByTray 8 1$$+TrayExecByTray 8 0$$+TrayExecByTray 9 9$$+TrayExecByTray 9 8$$+TrayExecByTray 9 7$$+TrayExecByTray 9 6$$+TrayExecByTray 9 5$$+TrayExecByTray 9 4$$+TrayExecByTray 9 3$$+TrayExecByTray 9 2$$+TrayExecByTray 9 1$$+TrayExecByTray 9 0" ""
+Space "FirePhasers$$+trayexecbytray 9 0$$+trayexecbytray 9 2$$+trayexecbytray 9 4$$+trayexecbytray 9 6$$+trayexecbytray 9 8$$+trayexecbytray 8 0$$+trayexecbytray 8 2$$+trayexecbytray 8 4$$+trayexecbytray 8 6$$+trayexecbytray 8 8$$+trayexecbytray 7 0$$+trayexecbytray 7 2$$+trayexecbytray 7 4$$+trayexecbytray 7 6$$+trayexecbytray 7 8$$+trayexecbytray 6 0$$+trayexecbytray 6 2$$+trayexecbytray 6 4$$+trayexecbytray 6 6$$+trayexecbytray 6 8$$$$+trayexecbytray 6 9$$+trayexecbytray 6 7$$+trayexecbytray 6 5$$+trayexecbytray 6 3$$+trayexecbytray 6 1$$+trayexecbytray 7 9$$+trayexecbytray 7 5$$+trayexecbytray 7 3$$+trayexecbytray 7 1$$+trayexecbytray 8 9$$+trayexecbytray 8 7$$+trayexecbytray 8 5$$+trayexecbytray 8 3$$+trayexecbytray 8 1$$+trayexecbytray 9 9$$+trayexecbytray 9 7$$+trayexecbytray 9 5$$+trayexecbytray 9 3$$+trayexecbytray 9 1$$FireProjectiles"
 ```
 
 # Ground keybinds
