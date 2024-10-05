@@ -43,8 +43,6 @@ var blockedSites = [
     "discord.com/channels/549448381613998103",
 ];
 
-];
-
 // Define blocked IPs
 var blockedIPs = [
     "10.10.10.10",
