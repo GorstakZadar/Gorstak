@@ -38,14 +38,6 @@ var blockedSites = [
   // Ensure no path-specific entries
 ];
 
-// Define blocked IPs
-var blockedIPs = [
-  // Add specific IP addresses to block
-  "192.168.1.1",
-  "10.0.0.1"
-  // Add more as needed
-];
-
 // Define blocked IP ranges
 var blockedIPRanges = [
   { base: "192.168.0.0", mask: 16 }, // 192.168.0.0/16
@@ -92,13 +84,6 @@ function FindProxyForURL(url, host) {
   // Check blocked sites
   for (var i = 0; i < blockedSites.length; i++) {
     if (host === blockedSites[i] || url.indexOf(blockedSites[i] + "/") !== -1) {
-      return blackhole;
-    }
-  }
-
-  // Check blocked IPs
-  for (var i = 0; i < blockedIPs.length; i++) {
-    if (host === blockedIPs[i]) {
       return blackhole;
     }
   }
