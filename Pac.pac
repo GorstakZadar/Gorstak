@@ -21,35 +21,35 @@ var adRegex = new RegExp(
   "i"
 );
 
-    // Define blocked URLs (exact matches)
-    var blockedURLs = [
-        "discord.com/channels/889102180332732436",
-        "discord.com/channels/452237221840551938",
-        "discord.com/channels/1128414431085346897",
-        "discord.com/channels/567592181905489920",
-        "discord.com/channels/549448381613998103",
-        "discord.com/channels/150662382874525696",
-        "discord.com/channels/731641286389661727",
-        "discord.com/channels/246414844851519490",
-        "discord.com/channels/240880736851329024",
-        "reddit.com/r/croatia",
-        "reddit.com/r/hrvatska"
-        // Add more URLs as needed
-    ];
+// Define blocked URLs (exact matches)
+var blockedURLs = [
+    "discord.com/channels/889102180332732436",
+    "discord.com/channels/452237221840551938",
+    "discord.com/channels/1128414431085346897",
+    "discord.com/channels/567592181905489920",
+    "discord.com/channels/549448381613998103",
+    "discord.com/channels/150662382874525696",
+    "discord.com/channels/731641286389661727",
+    "discord.com/channels/246414844851519490",
+    "discord.com/channels/240880736851329024",
+    "reddit.com/r/croatia",
+    "reddit.com/r/hrvatska"
+// Add more URLs as needed
+];
 
-    // Define blocked sites (exact domain matches)
-    var blockedSites = [
-        "instrumenttactics.com",
-        "srce.unizg.hr",
-        "rtl.hr",
-        "hrt.hr",
-        "dnevnik.hr",
-        "novatv.dnevnik.hr",
-        "novavideo.dnevnik.hr",
-        "forum.hr",
-        "forum.pcekspert.com"
-        // Add more sites as needed
-    ];
+// Define blocked sites (exact domain matches)
+var blockedSites = [
+    "instrumenttactics.com",
+    "srce.unizg.hr",
+    "rtl.hr",
+    "hrt.hr",
+    "dnevnik.hr",
+    "novatv.dnevnik.hr",
+    "novavideo.dnevnik.hr",
+    "forum.hr",
+    "forum.pcekspert.com"
+// Add more sites as needed
+];
 
 function FindProxyForURL(url, host) {
   host = host.toLowerCase();
