@@ -13,40 +13,39 @@ var whitelist = [
 ];
 
 // Define blocked URLs (exact matches or specific patterns)
-var blockedURLs = [
-    // Add specific URL patterns to block, e.g., "discord.com/channels/889102180332732436"
-    "discord.com/channels/889102180332732436",
-    "discord.com/channels/452237221840551938",
-    "discord.com/channels/1128414431085346897",
-    "discord.com/channels/567592181905489920",
-    "discord.com/channels/549448381613998103",
-    "discord.com/channels/150662382874525696",
-    "discord.com/channels/731641286389661727",
-    "discord.com/channels/246414844851519490",
-    "discord.com/channels/240880736851329024",
-    // Removed duplicate entry
-];
+var blockedURLsSet = {
+    "discord.com/channels/889102180332732436": true,
+    "discord.com/channels/452237221840551938": true,
+    "discord.com/channels/1128414431085346897": true,
+    "discord.com/channels/567592181905489920": true,
+    "discord.com/channels/549448381613998103": true,
+    "discord.com/channels/150662382874525696": true,
+    "discord.com/channels/731641286389661727": true,
+    "discord.com/channels/246414844851519490": true,
+    "discord.com/channels/240880736851329024": true,
+    // Ensure no duplicate entries
+};
 
 // Define blocked sites (exact domain matches)
-var blockedSites = [
-    "instrumenttactics.com",
-    "srce.unizg.hr",
-    "rtl.hr",
-    "hrt.hr",
-    "dnevnik.hr",
-    "novatv.dnevnik.hr",
-    "novavideo.dnevnik.hr",
-    "forum.hr",
-    "forum.pcekspert.com",
-    "reddit.com",
-    // Removed path-specific entries
-];
+var blockedSitesSet = {
+    "instrumenttactics.com": true,
+    "srce.unizg.hr": true,
+    "rtl.hr": true,
+    "hrt.hr": true,
+    "dnevnik.hr": true,
+    "novatv.dnevnik.hr": true,
+    "novavideo.dnevnik.hr": true,
+    "forum.hr": true,
+    "forum.pcekspert.com": true,
+    "reddit.com": true,
+    // Ensure no path-specific entries
+};
 
 // Define blocked IPs
-var blockedIPs = [
-    "10.10.10.10",
+var blockedIPsSet = {
+    "10.10.10.10": true,
     // Add more IPs as needed
-];
+};
 
 // Define blocked IP ranges using CIDR notation
 var blockedIPRanges = [
@@ -93,23 +92,19 @@ function FindProxyForURL(url, host) {
     }
 
     // Check against blocked URLs
-    for (var i = 0; i < blockedURLs.length; i++) {
-        if (url.includes(blockedURLs[i])) {
-            return blackhole;
-        }
+    if (blockedURLsSet[url]) {
+        return blackhole;
     }
 
     // Check against blocked sites
-    for (var i = 0; i < blockedSites.length; i++) {
-        if (host === blockedSites[i] || host.endsWith('.' + blockedSites[i])) {
-            return blackhole;
-        }
+    if (blockedSitesSet[host] || endsWithBlockedSite(host)) {
+        return blackhole;
     }
 
     // Check against blocked IPs
     if (isIPAddress(host)) {
         // Direct IP match
-        if (blockedIPs.includes(host)) {
+        if (blockedIPsSet[host]) {
             return blackhole;
         }
 
@@ -138,4 +133,16 @@ function FindProxyForURL(url, host) {
 
     // If none of the rules match, allow direct connection
     return pass;
+}
+
+// Helper function to check if host ends with a blocked site
+function endsWithBlockedSite(host) {
+    for (var site in blockedSitesSet) {
+        if (blockedSitesSet.hasOwnProperty(site)) {
+            if (host.endsWith('.' + site)) {
+                return true;
+            }
+        }
+    }
+    return false;
 }
