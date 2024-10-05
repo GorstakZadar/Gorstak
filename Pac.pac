@@ -14,7 +14,17 @@ var whitelist = [
 
 // Define blocked URLs (exact matches or specific patterns)
 var blockedURLs = [
-    // Add specific URL patterns to block
+    // Add specific URL patterns to block, e.g., "discord.com/channels/889102180332732436"
+    "discord.com/channels/889102180332732436",
+    "discord.com/channels/452237221840551938",
+    "discord.com/channels/1128414431085346897",
+    "discord.com/channels/567592181905489920",
+    "discord.com/channels/549448381613998103",
+    "discord.com/channels/150662382874525696",
+    "discord.com/channels/731641286389661727",
+    "discord.com/channels/246414844851519490",
+    "discord.com/channels/240880736851329024",
+    // Removed duplicate entry
 ];
 
 // Define blocked sites (exact domain matches)
@@ -28,19 +38,8 @@ var blockedSites = [
     "novavideo.dnevnik.hr",
     "forum.hr",
     "forum.pcekspert.com",
-    "reddit.com/r/askcroatia",
-    "reddit.com/r/croatia",
-    "reddit.com/r/hrvatska",
-    "discord.com/channels/889102180332732436",
-    "discord.com/channels/452237221840551938",
-    "discord.com/channels/1128414431085346897",
-    "discord.com/channels/567592181905489920",
-    "discord.com/channels/549448381613998103",
-    "discord.com/channels/150662382874525696",
-    "discord.com/channels/731641286389661727",
-    "discord.com/channels/246414844851519490",
-    "discord.com/channels/240880736851329024",
-    "discord.com/channels/549448381613998103",
+    "reddit.com",
+    // Removed path-specific entries
 ];
 
 // Define blocked IPs
@@ -60,14 +59,14 @@ var adRegex = /(^|\.)ads?\./i;
 
 // Function to convert IP to numerical value
 function ipToNum(ip) {
-    return ip.split('.').reduce((acc, octet) => (acc << 8) + parseInt(octet, 10), 0);
+    return ip.split('.').reduce((acc, octet) => (acc << 8) + parseInt(octet, 10), 0) >>> 0;
 }
 
 // Function to check if IP is within a specified CIDR range
 function isIPInRange(ip, range) {
     const ipNum = ipToNum(ip);
     const baseNum = ipToNum(range.base);
-    const mask = 0xFFFFFFFF << (32 - range.mask);
+    const mask = (0xFFFFFFFF << (32 - range.mask)) >>> 0;
     return (ipNum & mask) === (baseNum & mask);
 }
 
