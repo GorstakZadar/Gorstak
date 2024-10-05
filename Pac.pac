@@ -1,11 +1,25 @@
-function FindProxyForURL(url, host) {
-    // Define proxy settings
-    var pass = "DIRECT";
-    var blackhole = "PROXY 127.0.0.1:3421"; // Ensure this proxy is set up to block traffic
-    var isEnabled = true; // Set to false to disable the PAC script
-    var whitelist = [
-        // Add whitelisted hosts here (e.g., "example.com")
-    ];
+// If you're not using a proxy, set: pass = "DIRECT"
+// If you are using a proxy, set: pass = "PROXY hostname:port"
+var pass = "DIRECT";
+
+// For use with BlackHole Proxy, set: blackhole = "PROXY 127.0.0.1:3421"
+// For use with a local http server, set: blackhole = "PROXY 127.0.0.1:80"
+// Otherwise use: blackhole = "PROXY 0.0.0.0"
+var blackhole = "PROXY 127.0.0.1:3421";
+
+// To autostart with the browser set to 1
+var isEnabled = 1;
+
+// Whitelist domains (these are allowed no matter what)
+var whitelist = [];
+
+// Regular expression patterns for popular ad domains and subdomains
+var adRegex = new RegExp(
+  [
+    "^(.+[-_.])?(ad[sxv]?|teads?|doubleclick|adservice|adtrack(er|ing)?|advertising|adnxs|admeld|advert|adx(addy|pose|pr[io])?|adform|admulti|adbutler|adblade|adroll|adgr[ao]|adinterax|admarvel|admed(ia|ix)|adperium|adplugg|adserver|adsolut|adtegr(it|ity)|adtraxx|advertising|aff(iliat(es?|ion))|akamaihd|amazon-adsystem|appnexus|appsflyer|audience2media|bingads|bidswitch|brightcove|casalemedia|contextweb|criteo|doubleclick|emxdgt|e-planning|exelator|eyewonder|flashtalking|goog(le(syndication|tagservices))|gunggo|hurra(h|ynet)|imrworldwide|insightexpressai|kontera|lifestreetmedia|lkntracker|mediaplex|ooyala|openx|pixel(e|junky)|popcash|propellerads|pubmatic|quantserve|revcontent|revenuehits|sharethrough|skimresources|taboola|traktrafficx|twitter[.]com|undertone|yieldmo)",
+  ].join("|"),
+  "i"
+);
 
     // Define blocked URLs (exact matches)
     var blockedURLs = [
@@ -37,100 +51,41 @@ function FindProxyForURL(url, host) {
         // Add more sites as needed
     ];
 
-    // Define blocked IP ranges
-    var blockedIPRanges = [
-        { base: "192.168.0.0", mask: 16 }, // 192.168.0.0/16
-        { base: "10.0.0.0", mask: 8 }      // 10.0.0.0/8
-        // Add more ranges as needed
-    ];
+function FindProxyForURL(url, host) {
+  host = host.toLowerCase();
+  url = url.toLowerCase();
 
-    // Regular expression to match ad-related domains
-    var adRegex = /^(.+[-_.])?(ads?|teads|doubleclick|adservice|adtracker(?:er|ing)?|advertising|adnxs|admeld|advert|adx(?:addy|pose|pr[io])?|adform|admulti|adbutler|adblade|adroll|adgr(?:ao|interax)|admarvel|admed(?:ia|ix)|adperium|adplugg|adserver|adsolut|adtegr(?:it|ity)|adtraxx|affiliates?|akamaihd|amazon-adsystem|appnexus|appsflyer|audience2media|bingads|bidswitch|brightcove|casalemedia|contextweb|criteo|emxdgt|e-planning|exelator|eyewonder|flashtalking|google(?:syndication|tagservices)|gunggo|hurra(?:h|ynet)|imrworldwide|insightexpressai|kontera|lifestreetmedia|lkntracker|mediaplex|ooyala|openx|pixel(?:e|junky)|popcash|propellerads|pubmatic|quantserve|revcontent|revenuehits|sharethrough|skimresources|taboola|traktrafficx|twitter\.com|undertone|yieldmo)$/i;
-
-    // Helper function to convert IP to a numerical value
-    function ipToNum(ip) {
-        var parts = ip.split('.');
-        return ((parseInt(parts[0], 10) << 24) |
-                (parseInt(parts[1], 10) << 16) |
-                (parseInt(parts[2], 10) << 8) |
-                parseInt(parts[3], 10)) >>> 0;
-    }
-
-    // Helper function to check if an IP is within a range
-    function isIPInRange(ip, range) {
-        var ipNum = ipToNum(ip);
-        var baseNum = ipToNum(range.base);
-        var mask = (0xFFFFFFFF << (32 - range.mask)) >>> 0;
-        return (ipNum & mask) === (baseNum & mask);
-    }
-
-    // Helper function to check if the host is an IP address
-    function isIPAddress(host) {
-        var ipRegex = /^(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)$/;
-        return ipRegex.test(host);
-    }
-
-    // Helper function to extract the path from the URL
-    function getPath(url) {
-        var pathStart = url.indexOf('/', url.indexOf('//') + 2);
-        if (pathStart === -1) {
-            return '/';
-        }
-        return url.substring(pathStart);
-    }
-
-    // Begin PAC processing
-    host = host.toLowerCase();
-    url = url.toLowerCase();
-
-    // If PAC script is disabled, allow all traffic
-    if (!isEnabled) {
-        return pass;
-    }
-
-    // Check if the host is in the whitelist
-    for (var i = 0; i < whitelist.length; i++) {
-        if (host === whitelist[i].toLowerCase()) {
-            return pass;
-        }
-    }
-
-    // Check blocked URLs
-    for (var i = 0; i < blockedURLs.length; i++) {
-        var blockedURL = blockedURLs[i].toLowerCase();
-        var blockedHost = blockedURL.split('/')[0];
-        var blockedPath = blockedURL.substring(blockedURL.indexOf('/') || 0);
-
-        if (host === blockedHost) {
-            var urlPath = getPath(url);
-            if (urlPath === blockedPath || url === blockedURL) {
-                return blackhole;
-            }
-        }
-    }
-
-    // Check blocked sites (exact domain and subdomains)
-    for (var i = 0; i < blockedSites.length; i++) {
-        var blockedSite = blockedSites[i].toLowerCase();
-        if (host === blockedSite || host.endsWith('.' + blockedSite)) {
-            return blackhole;
-        }
-    }
-
-    // Check if the host is an IP address and within blocked ranges
-    if (isIPAddress(host)) {
-        for (var i = 0; i < blockedIPRanges.length; i++) {
-            if (isIPInRange(host, blockedIPRanges[i])) {
-                return blackhole;
-            }
-        }
-    }
-
-    // Check if the host matches ad-related domains
-    if (adRegex.test(host)) {
-        return blackhole;
-    }
-
-    // If none of the above conditions are met, allow direct connection
+  // Normal passthrough if AntiAd is disabled
+  if (!isEnabled) {
     return pass;
+  }
+
+  // Allow domains and sites explicitly from the whitelist
+  if (whitelist.length > 0 && whitelist.indexOf(host) !== -1) {
+    return pass;
+  }
+
+  // Ensure that blockedURLs is populated before checking against it
+  if (blockedURLs.length > 0) {
+    // Block specific URLs
+    for (var i = 0; i < blockedURLs.length; i++) {
+      // Check if the host or the full URL contains the blocked URL
+      if (host.indexOf(blockedURLs[i]) !== -1 || url.indexOf(blockedURLs[i]) !== -1) {
+        return blackhole;
+      }
+    }
+  }
+
+  // Block specific URLs manually
+  if (blockedSites.indexOf(url) !== -1) {
+    return blackhole;
+  }
+
+  // Block ads using regular expressions
+  if (adRegex.test(host)) {
+    return blackhole;
+  }
+
+  // All else fails, just pass through
+  return pass;
 }
