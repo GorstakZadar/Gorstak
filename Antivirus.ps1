@@ -115,9 +115,7 @@ function Get-VirusTotalScan {
 
     # Query VirusTotal to see if the file was already uploaded and analyzed
     $url = "https://www.virustotal.com/api/v3/files/$($fileHash.Hash)"
-    $headers = @{
-        "x-apikey" = $VirusTotalApiKey
-    }
+    $headers = @{"x-apikey" = $VirusTotalApiKey}
 
     $response = Invoke-RestMethod -Uri $url -Headers $headers -Method Get -ErrorAction SilentlyContinue
 
@@ -151,6 +149,56 @@ $whitelistedProcesses = @(
     "powershell"   # PowerShell itself
 )
 
+# Function to block execution of a file
+function Block-Execution {
+    param (
+        [string]$FilePath,
+        [string]$Reason
+    )
+
+    # Remove all permissions from the file
+    $acl = Get-Acl -Path $FilePath
+    $acl.SetAccessRuleProtection($true, $false) # Protect the ACL
+    $acl.Access | ForEach-Object {
+        $acl.RemoveAccessRule($_)
+    }
+    Set-Acl -Path $FilePath -AclObject $acl
+    Write-Log "Blocked file ${FilePath}: ${Reason}"
+}
+
+# Function to check the file certificate
+function Check-FileCertificate {
+    param (
+        [string]$FilePath
+    )
+
+    try {
+        $signature = Get-AuthenticodeSignature -FilePath $FilePath
+        switch ($signature.Status) {
+            'Valid' {
+                return $true
+            }
+            'NotSigned' {
+                Write-Log "File $FilePath is not digitally signed."
+                Block-Execution -FilePath $FilePath -Reason "Not signed"
+                return $false
+            }
+            'UnknownError' {
+                Write-Log "Unknown error while verifying signature of $FilePath."
+                return $false
+            }
+            default {
+                Write-Log "File $FilePath has an invalid or untrusted signature: $($signature.Status)"
+                Block-Execution -FilePath $FilePath -Reason "Invalid signature"
+                return $false
+            }
+        }
+    } catch {
+        Write-Log "Error checking certificate for ${FilePath}: $($_.Exception.Message)"
+        return $false
+    }
+}
+
 # Advanced keylogger detection: look for suspicious processes but skip whitelisted ones
 function Monitor-Keyloggers {
     $suspiciousProcesses = Get-Process | Where-Object {
@@ -170,35 +218,21 @@ function Monitor-Keyloggers {
     }
 }
 
-# Overlay detection with whitelisting of critical processes
+# Function to monitor for suspicious screen overlays
 function Monitor-Overlays {
-    $windows = @(Get-Process | Where-Object {
-        $_.MainWindowTitle -ne "" -and $_.MainWindowHandle -ne 0 -and
+    $windows = Get-Process | Where-Object {
+        $_.MainWindowTitle -ne "" -and
         (-not $whitelistedProcesses -contains $_.ProcessName)
-    })
+    }
 
     foreach ($window in $windows) {
-        if ($window.MainWindowTitle -eq "" -or ($window.MainWindowHandle -ne 0 -and $window.MainWindowTitle -like "*login*")) {
-            Write-Log "Potential overlay detected: $($window.MainWindowTitle)"
+        Write-Log "Potential screen overlay or UI hijacker detected: $($window.ProcessName)"
+        try {
+            Stop-Process -Id $window.Id -Force
+            Write-Log "Overlay process terminated: $($window.ProcessName)"
+        } catch {
+            Write-Log "Failed to terminate process: $($window.ProcessName)"
         }
-    }
-}
-
-# Function to add the script to Windows startup
-function Add-ScriptToStartup {
-    $scriptPath = $MyInvocation.MyCommand.Definition
-    $shortcutPath = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\SimpleAntivirus.lnk"
-
-    # Check if the shortcut already exists
-    if (-not (Test-Path $shortcutPath)) {
-        $WScriptShell = New-Object -ComObject WScript.Shell
-        $shortcut = $WScriptShell.CreateShortcut($shortcutPath)
-        $shortcut.TargetPath = $scriptPath
-        $shortcut.WorkingDirectory = Split-Path $scriptPath
-        $shortcut.Save()
-        Write-Log "Script added to startup."
-    } else {
-        Write-Log "Script is already added to startup."
     }
 }
 
@@ -222,11 +256,9 @@ function Start-AdvancedMonitoring {
     }
 }
 
-# Ensure elevation and add the script to startup
+# Ensure elevation
 Ensure-Elevation
-Add-ScriptToStartup
 
 Start-Job -ScriptBlock {
     Start-AdvancedMonitoring
 }
-
