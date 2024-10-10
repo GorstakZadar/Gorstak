@@ -1,0 +1,88 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"SystemResponsiveness"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Audio]
+"Clock Rate"=dword:00000a96
+"GPU Priority"=dword:00000002
+"Priority"=dword:00000001
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+"Background Only"="True"
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Low Latency]
+"Background Only"="False"
+"Clock Rate"=dword:00000a96
+"GPU Priority"=dword:00000002
+"Latency Sensitive"="True"
+"Priority"=dword:00000001
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Pro Audio]
+"Clock Rate"=dword:00000a96
+"GPU Priority"=dword:00000002
+"SFIO Priority"="High"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\UAC\COMAutoApprovalList]
+"ca8c87c1-929d-45ba-94db-ef8e6cb346ad"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop]
+"ForceActiveDesktopOn"=dword:00000001
+"NoActiveDesktop"=dword:00000000
+"NoActiveDesktopChanges"=dword:00000000
+"NoAddingComponents"=dword:00000000
+"NoAddingDeleteComponents"=dword:00000000
+"NoChangingWallPaper"=dword:00000000
+"NoCloseDragDropBands"=dword:00000000
+"NoComponents"=dword:00000000
+"NoDeletingMyComputerIcon"=dword:00000000
+"NoEditingComponents"=dword:00000000
+"NoHTMLWallPaper"=dword:00000000
+"NoMovingBands"=dword:00000000
+"NoNetCrawling"=dword:00000000
+"NoPrinting"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Power]
+"D3PCLatency"=dword:00000000
+"DefaultD3TransitionLatencyActivelyUsed"=dword:00000001
+"DefaultD3TransitionLatencyIdleLongTime"=dword:00000001
+"DefaultD3TransitionLatencyIdleMonitorOff"=dword:00000001
+"DefaultD3TransitionLatencyIdleNoContext"=dword:00000001
+"DefaultD3TransitionLatencyIdleShortTime"=dword:00000001
+"DefaultD3TransitionLatencyIdleVeryLongTime"=dword:00000001
+"DefaultLatencyToleranceIdle0"=dword:00000001
+"DefaultLatencyToleranceIdle0MonitorOff"=dword:00000001
+"DefaultLatencyToleranceIdle1"=dword:00000001
+"DefaultLatencyToleranceIdle1MonitorOff"=dword:00000001
+"DefaultLatencyToleranceMemory"=dword:00000001
+"DefaultLatencyToleranceNoContext"=dword:00000001
+"DefaultLatencyToleranceNoContextMonitorOff"=dword:00000001
+"DefaultLatencyToleranceOther"=dword:00000001
+"DefaultLatencyToleranceTimerPeriod"=dword:00000001
+"DefaultMemoryRefreshLatencyToleranceActivelyUsed"=dword:00000001
+"DefaultMemoryRefreshLatencyToleranceMonitorOff"=dword:00000001
+"DefaultMemoryRefreshLatencyToleranceNoContext"=dword:00000001
+"DisableWriteCombining"=dword:00000001
+"EnableRuntimePowerManagement"=dword:00000000
+"FlTransitionLatency"=dword:00000000
+"Latency"=dword:00000001
+"LOWLATENCY"=dword:00000001
+"MaxIAverageGraphicsLatencyInOneBucket"=dword:00000001
+"MiracastPerfTrackGraphicsLatency"=dword:00000001
+"MonitorLatencyTolerance"=dword:00000001
+"MonitorRefreshLatencyTolerance"=dword:00000001
+"Node3DLowLatency"=dword:00000001
+"PciLatencyTimerControl"=dword:00000001
+"PowerSavingTweaks"=dword:00000000
+"PrimaryPushBufferSize"=dword:00000001
+"RMDeepLlEntryLatencyUsec"=dword:00000000
+"RMDisablePostL2Compression"=dword:00000001
+"RmDisableRegistryCaching"=dword:00000001
+"RmGpsPsEnablePerCpuCoreDpc"=dword:00000001
+"TransitionLatency"=dword:00000001

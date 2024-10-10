@@ -1,0 +1,50 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Srp\Gp]
+"RuleCount"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers]
+"AuthenticodeEnabled"=dword:00000300
+"DefaultLevel"=dword:00040000
+"ExecutableTypes"=hex(7):41,00,44,00,45,00,00,00,41,00,44,00,50,00,00,00,42,00,\
+  41,00,53,00,00,00,42,00,41,00,54,00,00,00,43,00,48,00,4d,00,00,00,43,00,4d,00,\
+  44,00,00,00,43,00,4f,00,4d,00,00,00,43,00,50,00,4c,00,00,00,43,00,52,00,54,00,\
+  00,00,45,00,58,00,45,00,00,00,48,00,4c,00,50,00,00,00,48,00,54,00,41,00,00,00,\
+  49,00,4e,00,46,00,00,00,49,00,4e,00,53,00,00,00,49,00,53,00,50,00,00,00,4c,00,\
+  4e,00,4b,00,00,00,4d,00,44,00,42,00,00,00,4d,00,44,00,45,00,00,00,4d,00,53,00,\
+  43,00,00,00,4d,00,53,00,49,00,00,00,4d,00,53,00,50,00,00,00,4d,00,53,00,54,00,\
+  00,00,4f,00,43,00,58,00,00,00,50,00,43,00,44,00,00,00,50,00,49,00,46,00,00,00,\
+  52,00,45,00,47,00,00,00,53,00,43,00,52,00,00,00,53,00,48,00,53,00,00,00,55,00,\
+  52,00,4c,00,00,00,56,00,42,00,00,00,57,00,53,00,43,00,00,00,00,00
+"PolicyScope"=dword:00000000
+"TransparentEnabled"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Paths\{2eff1c9c-e2c7-4e49-a925-8d3f9a26c5c6}]
+"Description"=""
+"ItemData"="*dllhost.exe"
+"LastModified"=hex(b):fd,97,54,f6,b6,0a,db,01
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Paths\{a0960ad4-2037-4409-85b1-fb28f8279b97}]
+"Description"=""
+"ItemData"="ftp://*"
+"LastModified"=hex(b):90,a0,42,07,dc,0d,db,01
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Paths\{d69f4208-40a9-4832-bc8b-a574e3079993}]
+"Description"=""
+"ItemData"="*ProvisioningPackageInstaller.exe"
+"LastModified"=hex(b):64,a7,14,11,fe,0d,db,01
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Paths\{e163886b-1dc8-4ee3-8e2d-3c1fa219fe26}]
+"Description"=""
+"ItemData"="javascript://*"
+"LastModified"=hex(b):f5,88,ea,17,dc,0d,db,01
+"SaferFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers\0\Paths\{f7faef29-1aab-4613-a911-92777533eaa5}]
+"Description"=""
+"ItemData"="smb://*"
+"LastModified"=hex(b):cc,7a,1a,20,dc,0d,db,01
+"SaferFlags"=dword:00000000
