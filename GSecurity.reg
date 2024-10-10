@@ -11,8 +11,7 @@ Windows Registry Editor Version 5.00
 "WindowArrangementActive"="0"
 
 [HKEY_CURRENT_USER\Control Panel\International]
-"sLongDate"="ddd MMM yyyy"
-"sShortDate"="ddd. MMM. yyyy"
+"sShortDate"="ddd. MMM. dd.MM yyyy"
 
 [HKEY_CURRENT_USER\Control Panel\International\User Profile]
 "HttpAcceptLanguageOptOut"=dword:00000001
