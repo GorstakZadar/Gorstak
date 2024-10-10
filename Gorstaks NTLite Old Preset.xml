@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preset xmlns="urn:schemas-nliteos-com:pn.v1">
+	<Date>10/10/2024 20:17</Date>
+	<AppInfo>
+		<Version>1.5.0.5855</Version>
+		<Licensed>Yes</Licensed>
+		<Protections>Yes</Protections>
+		<Host>Windows 10 Enterprise N LTSC 2019 64-bit - Client 10.0.17763.1 (en-US) - en-US</Host>
+	</AppInfo>
+	<ImageInfo>
+		<Version mode="offline">Windows 10 Enterprise 64-bit - Client 10.0.26100.1742 (en-US)</Version>
+		<GUID>{6A894B26-BBBA-46BE-AECE-194C6A2E363F}</GUID>
+	</ImageInfo>
+	<RemoveComponents>
+		<c>adamclient 'Active Directory Lightweight Directory Services (AD LDS)'</c>
+		<c>azuread 'Azure Active Directory'</c>
+		<c>containers</c>
+		<c>dbgeng 'Windows Symbolic Debugger Engine'</c>
+		<c>driver_c_fdc.inf</c>
+		<c>driver_c_floppydisk.inf</c>
+		<c>driver_c_smartcard.inf</c>
+		<c>driver_c_smartcardfilter.inf</c>
+		<c>driver_c_smartcardreader.inf</c>
+		<c>driver_c_volsnap.inf</c>
+		<c>driver_fdc.inf</c>
+		<c>driver_flpydisk.inf</c>
+		<c>driver_kdnic.inf</c>
+		<c>driver_msclmd.inf</c>
+		<c>driver_scrawpdo.inf</c>
+		<c>driver_scunknown.inf</c>
+		<c>driver_tpmvsc.inf</c>
+		<c>driver_usbcciddriver.inf</c>
+		<c>driver_volsnap.inf</c>
+		<c>driver_wudfusbcciddriver.inf</c>
+		<c>driver_xinputhid.inf</c>
+		<c>errorreporting 'Windows Error Reporting'</c>
+		<c>firstlogonanim 'First-logon animation'</c>
+		<c>guardedhost 'Guarded Host'</c>
+		<c>hwsupport_floppy 'Floppy disk'</c>
+		<c>hwsupport_smartcard 'Smartcard'</c>
+		<c>hwsupport_telephony 'Telephony'</c>
+		<c>hwsupport_tv 'TV Tuner codecs and support'</c>
+		<c>indeo 'Intel Indeo Codecs'</c>
+		<c>iscsi 'iSCSI Initiator'</c>
+		<c>isoburn 'Windows Disc Image Burning Tool'</c>
+		<c>kerneldebug 'Kernel Debugging'</c>
+		<c>legacycomponents 'Legacy components'</c>
+		<c>lxss 'Windows Subsystem for Linux'</c>
+		<c>manifests 'Windows Component Database'</c>
+		<c>Microsoft.AAD.BrokerPlugin 'AAD.BrokerPlugin'</c>
+		<c>Microsoft.MicrosoftStickyNotes 'MicrosoftStickyNotes'</c>
+		<c>Microsoft.WindowsAlarms 'WindowsAlarms'</c>
+		<c>migwiz 'Easy Transfer'</c>
+		<c>ntvdm 'NTVDM 16-bit subsystem'</c>
+		<c>onedrive</c>
+		<c>optionalfeatures 'Optional Features'</c>
+		<c>phonesvc 'Phone Service'</c>
+		<c>pos 'Point of Service (POS)'</c>
+		<c>rasauto 'Remote Access Auto Connection Manager'</c>
+		<c>retaildemo 'Retail Demo Content'</c>
+		<c>screensavers</c>
+		<c>securitycenter 'Security Center'</c>
+		<c>sfc 'System File Check (SFC)'</c>
+		<c>soundsdefault 'Sounds (Default)'</c>
+		<c>speechcommon 'Speech Recognition'</c>
+		<c>speechtts 'Speech TTS'</c>
+		<c>staticfontcache 'Static Font Cache'</c>
+		<c>storageqos 'Storage Quality of Service (Storage QoS)'</c>
+		<c>systemrestore 'System Restore'</c>
+		<c>tempcache 'Cache and temp files'</c>
+		<c>vss 'Volume Shadow Copy'</c>
+		<c>winre 'Windows Recovery'</c>
+		<c>winsat 'Windows System Assessment Tool (WinSAT)'</c>
+		<c>winsxs 'Windows Component Store (WinSxS)'</c>
+	</RemoveComponents>
+	<Compatibility protectHidden="true">
+		<ComponentFeatures>
+			<Feature enabled="yes">AppxSupport</Feature>
+			<Feature enabled="yes">DefaultFonts</Feature>
+			<Feature enabled="no">Hyper-V</Feature>
+			<Feature enabled="yes">OfficeSupport</Feature>
+			<Feature enabled="yes">NetworkDiscovery</Feature>
+			<Feature enabled="yes">OOBE</Feature>
+			<Feature enabled="yes">Printing</Feature>
+			<Feature enabled="no">Recommended-All</Feature>
+			<Feature enabled="yes">SamsungSwitch</Feature>
+			<Feature enabled="yes">Recommended-Tablet</Feature>
+			<Feature enabled="yes">USB</Feature>
+			<Feature enabled="yes">USBModem</Feature>
+			<Feature enabled="yes">VideoPlayback</Feature>
+			<Feature enabled="no">VisualStudio</Feature>
+			<Feature enabled="yes">Activation</Feature>
+			<Feature enabled="yes">ActivationKMS</Feature>
+		</ComponentFeatures>
+		<MachineDrivers>
+			<Machine enabled="yes">HostMachine</Machine>
+			<Machine enabled="no">Hyper-V VM</Machine>
+			<Machine enabled="no">Parallels VM</Machine>
+			<Machine enabled="no">Virtual Box VM</Machine>
+			<Machine enabled="no">VMware VM</Machine>
+		</MachineDrivers>
+	</Compatibility>
+	<Features></Features>
+	<AddPackages></AddPackages>
+	<Drivers showHidden="true">
+		<AddDrivers></AddDrivers>
+	</Drivers>
+	<Unattended mode="0">
+		<OEMSetupComplete>false</OEMSetupComplete>
+		<AnswerFileLocationPanther>false</AnswerFileLocationPanther>
+		<AnswerFileLocationBoot>false</AnswerFileLocationBoot>
+		<SaveBothArch>false</SaveBothArch>
+		<settings pass="windowsPE">
+			<component name="Microsoft-Windows-Setup">
+				<DynamicUpdate>
+					<WillShowUI>OnError</WillShowUI>
+				</DynamicUpdate>
+				<ImageInstall>
+					<OSImage>
+						<WillShowUI>OnError</WillShowUI>
+						<InstallFrom>
+							<MetaData>
+								<Key>/IMAGE/NAME</Key>
+								<Value>Windows 11 Pro</Value>
+							</MetaData>
+						</InstallFrom>
+					</OSImage>
+				</ImageInstall>
+				<UserData>
+					<ProductKey>
+						<Key></Key>
+					</ProductKey>
+				</UserData>
+			</component>
+		</settings>
+	</Unattended>
+	<Tweaks>
+		<Settings></Settings>
+		<Services></Services>
+		<ExtraServices></ExtraServices>
+	</Tweaks>
+	<ApplyOptions>
+		<ImageTasks>
+			<Task>imageSaveTrim</Task>
+			<Task>imageFormatWim</Task>
+			<Task>imageOptionsDontBackupPresetLog</Task>
+		</ImageTasks>
+		<AutoIsoFile>NTLite.iso</AutoIsoFile>
+		<AutoIsoLabel>NTLite</AutoIsoLabel>
+		<AutoSplitSize>4000</AutoSplitSize>
+		<CleanHotfixedLeftovers>true</CleanHotfixedLeftovers>
+		<ReuseDriverCache>false</ReuseDriverCache>
+	</ApplyOptions>
+	<Execution>
+		<Add>
+			<Item type="Placeholder">
+				<Index>0</Index>
+			</Item>
+		</Add>
+		<Change></Change>
+		<Remove></Remove>
+	</Execution>
+	<Registry></Registry>
+</Preset>
