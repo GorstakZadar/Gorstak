@@ -495,8 +495,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\software\policies\microsoft\office\15.0\word\options]
 "custommarkupwarning"=dword:00000001
-"defaultformat"="
-              "
+"defaultformat"=""
 "dontupdatelinks"=dword:00000001
 "warnrevisions"=dword:00000001
 
